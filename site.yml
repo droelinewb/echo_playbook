@@ -1,0 +1,8 @@
+---
+- name: Return vars
+  hosts: localhost
+  become: false
+  gather_facts: no
+  tasks:
+    - debug:
+        msg: "{{ hostvars | to_nice_yaml }}"
