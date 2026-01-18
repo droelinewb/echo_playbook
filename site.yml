@@ -6,3 +6,5 @@
   tasks:
     - debug:
         msg: "{{ hostvars | to_nice_yaml }}"
+    - ansible.builtin.pause:
+        seconds: 5
